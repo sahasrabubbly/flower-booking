@@ -1,0 +1,37 @@
+@media (max-width:991px){
+    html{
+        font-size: 53%;
+    }
+    header{
+        padding: 2rem;
+    }
+    section{
+        padding:2rem;
+    }
+}
+@media (max-width:768px){
+    html .fa-bars {
+        display: block;
+    }
+    header .navbar{
+        position:absolute;
+        top:100%; left:0; right:0;
+        background-color: #eee;
+        border-top:.1rem solid rgba(0,0,0,.1);
+
+    }
+    header #toggler:checked ~.navbar{
+        clip-path:polygon(0 0,100% 0, 100% 100%,0% 100%);
+    }
+    header .navbar a{
+        margin:1.5rem;
+        padding:1.5rem;
+        background-color: #fff;
+        border:.1rem solid rgba(0,0,0,.1);
+        display:block;
+
+    }
+    .heading{
+        font-size: 2rem;
+    }
+}
